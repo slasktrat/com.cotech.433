@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mixwith",
+        "scope": null,
+        "escapedName": "mixwith",
+        "name": "mixwith",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/baskiers/athom/node-homey-433"
+    ]
+  ],
+  "_from": "mixwith@latest",
+  "_id": "mixwith@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mixwith",
+  "_nodeVersion": "5.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/mixwith-0.1.1.tgz_1459062291891_0.29040109808556736"
+  },
+  "_npmUser": {
+    "name": "justinfagnani",
+    "email": "justin@fagnani.com"
+  },
+  "_npmVersion": "3.3.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "mixwith",
+    "scope": null,
+    "escapedName": "mixwith",
+    "name": "mixwith",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mixwith/-/mixwith-0.1.1.tgz",
+  "_shasum": "c8995918c5b61fbfda9ad377a857cd47750541c0",
+  "_shrinkwrap": null,
+  "_spec": "mixwith",
+  "_where": "/Users/baskiers/athom/node-homey-433",
+  "author": {
+    "name": "Jusitn Fagnani",
+    "email": "justin@fagnani.com"
+  },
+  "bugs": {
+    "url": "https://github.com/justinfagnani/mixwith.js/issues"
+  },
+  "dependencies": {},
+  "description": "A simple, powerful mixin applier for JavaScript classes",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-umd": "^6.1.18",
+    "chai": "^3.4.1",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "c8995918c5b61fbfda9ad377a857cd47750541c0",
+    "tarball": "https://registry.npmjs.org/mixwith/-/mixwith-0.1.1.tgz"
+  },
+  "gitHead": "1aef19debcb5a5234553d5923b66fbce2d963e3f",
+  "homepage": "https://github.com/justinfagnani/mixwith.js#readme",
+  "keywords": [
+    "mixin",
+    "mixins",
+    "classes"
+  ],
+  "license": "Apache-2.0",
+  "main": "mixwith.js",
+  "maintainers": [
+    {
+      "name": "justinfagnani",
+      "email": "justin@fagnani.com"
+    }
+  ],
+  "name": "mixwith",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinfagnani/mixwith.js.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "mocha build/test"
+  },
+  "version": "0.1.1"
+}

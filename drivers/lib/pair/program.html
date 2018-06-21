@@ -1,0 +1,67 @@
+<div class="centered-container">
+	<div id="image-container"></div>
+	<div id="body"><span class="content"></span></div>
+	<div class="programAnimation" id="sendProgramSignalBackground" style="display:none;"></div>
+	<i class="loading fa fa-cog fa-spin programAnimation" id="sendProgramSignalSpinner" style="display:none;"></i>
+</div>
+
+<script>
+	var $container = $('[data-id="' + options.id + '"] ');
+	$container.find('#body > span').html(__(options.body));
+	var $imageContainer = $container.find('#image-container');
+	$imageContainer.css('width', options.svgWidth).css('height', options.svgHeight);
+	var $programElems = $container.find('.programAnimation');
+
+	$imageContainer.html(options.svg);
+	$imageContainer.highlight();
+
+	if (!$container.find('.view-navigation-next.dummy').length) {
+		var $nextButton = $container.find('.view-navigation-next');
+		var $nextButtonDummy = $nextButton.clone().addClass('dummy');
+		$nextButton.hide();
+		$nextButton.parent().append($nextButtonDummy);
+
+		$nextButtonDummy.on('click', function (e) {
+			$programElems.show();
+			Homey.emit('program_send', function (err) {
+				if (err){
+					Homey.alert(err.message && err.message.indexOf(' ') === -1 && __(err.message) !== err.message ? __(err.message) : JSON.stringify(err));
+					return;
+				}
+				$nextButtonDummy.siblings('.view-navigation-next').click();
+				$programElems.hide();
+			});
+			e.stopPropagation();
+			return false;
+		});
+	}
+
+	Homey.emit('program', function(err, device){
+		const dataKey = JSON.stringify(device.data);
+		window.selected_devices = [ dataKey ];
+		window.found_devices = {};
+		window.found_devices[dataKey] = device;
+	});
+</script>
+
+<style>
+	#sendProgramSignalSpinner {
+		z-index: 2;
+		position: absolute;
+		top: 25vh;
+		left: 38vw;
+		font-size: 9vh;
+		opacity: 1;
+	}
+
+	#sendProgramSignalBackground {
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background-color: #FFF;
+		opacity: 0.8;
+	}
+</style>

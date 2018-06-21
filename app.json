@@ -1,0 +1,229 @@
+{
+  "id": "com.cotech.433",
+  "name": {
+    "en": "CO/TECH"
+  },
+  "description": {
+    "en": "This app adds support for your Co/Tech 433 wall switches"
+  },
+  "category": [
+    "appliances",
+    "lights"
+  ],
+  "version": "1.0.0",
+  "compatibility": ">=1.5.3",
+  "author": {
+    "name": "Espen Ljosland",
+    "email": "espen@ljosland.com"
+  },
+  "images": {
+    "large": "./assets/images/large.jpg",
+    "small": "./assets/images/small.jpg"
+  },
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "signals": {
+    "433": {
+      "cotech": {
+        "sof": [],
+        "eof": [
+          473,
+          4076
+        ],
+        "words": [
+          [
+            473,
+            1554
+          ],
+          [
+            1498,
+            547
+          ]
+        ],
+        "interval": 5000,
+        "sensitivity": 0.5,
+        "repetitions": 20,
+        "minimalLength": 32,
+        "maximalLength": 32
+      }
+    }
+  },
+  "drivers": [
+    {
+      "id": "366363_wallswitch",
+      "name": {
+        "en": "36-6363 Wall Switch"
+      },
+      "class": "other",
+      "capabilities": [],
+      "images": {
+        "small": "./drivers/366363_wallswitch/images/small.jpg",
+        "large": "./drivers/366363_wallswitch/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "generic_imitate",
+          "navigation": {}
+        },
+        {
+          "id": "copy_repetitions_on",
+          "navigation": {
+            "prev": "generic_imitate"
+          }
+        },
+        {
+          "id": "copy_repetitions_off",
+          "navigation": {
+            "prev": "copy_repetitions_on"
+          }
+        },
+        {
+          "id": "generic_test_remote",
+          "navigation": {
+            "prev": "copy_repetitions_off",
+            "next": "generic_done"
+          }
+        },
+        {
+          "id": "generic_done",
+          "navigation": {}
+        }
+      ]
+    },
+    {
+      "id": "366364_wallswitch",
+      "name": {
+        "en": "36-6364 Wall Switch"
+      },
+      "class": "other",
+      "capabilities": [],
+      "images": {
+        "small": "./433_generator/assets/366364_wallswitch/images/small.jpg",
+        "large": "./433_generator/assets/366364_wallswitch/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "generic_imitate",
+          "navigation": {}
+        },
+        {
+          "id": "copy_repetitions_on",
+          "navigation": {
+            "prev": "generic_imitate"
+          }
+        },
+        {
+          "id": "copy_repetitions_off",
+          "navigation": {
+            "prev": "copy_repetitions_on"
+          }
+        },
+        {
+          "id": "generic_test_remote",
+          "navigation": {
+            "prev": "copy_repetitions_off",
+            "next": "generic_done"
+          }
+        },
+        {
+          "id": "generic_done",
+          "navigation": {}
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "366363_wallswitch:received",
+        "title": {
+          "en": "Button is pressed\u0000",
+          "nl": "Knop is ingedrukt\u0000"
+        },
+        "args": [
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On\u0000",
+                  "nl": "Aan\u0000"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off\u0000",
+                  "nl": "Uit\u0000"
+                }
+              }
+            ]
+          },
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=366363_wallswitch"
+          }
+        ]
+      },
+      {
+        "id": "366364_wallswitch:received",
+        "title": {
+          "en": "Button is pressed\u0000",
+          "nl": "Knop is ingedrukt\u0000"
+        },
+        "args": [
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0101",
+                "label": {
+                  "en": "Button A\u0000",
+                  "nl": "Knop A\u0000"
+                }
+              },{
+                "id": "0011",
+                "label": {
+                  "en": "Button B\u0000",
+                  "nl": "Knop B\u0000"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On\u0000",
+                  "nl": "Aan\u0000"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off\u0000",
+                  "nl": "Uit\u0000"
+                }
+              }
+            ]
+          },
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=366364_wallswitch"
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "actions": []
+  }
+}

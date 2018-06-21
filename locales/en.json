@@ -1,0 +1,231 @@
+{
+	"deviceClasses": {
+		"generic_socket": {
+			"views": {
+				"generic_imitate": {
+					"title": "Copy your remote signal\u0000",
+					"body": "Press the button that is paired to your socket.\u0000"
+				},
+				"generic_test_switch": {
+					"title": "Test your socket\u0000"
+				},
+				"generic_test_switch_2": {
+					"body": "Use your remote or the switch above to test your socket. Press next to continue.\u0000"
+				}
+			}
+		},
+		"generic_remote": {
+			"views": {
+				"generic_imitate": {
+					"title": "Identify your remote\u0000",
+					"body": "Click a button on your remote to pair it.\u0000"
+				}
+			}
+		}
+	},
+	"views": {
+		"copy_repetitions": {
+			"title": "Copy signal from remote",
+			"body": "Press the on and off button that is paired to your device multiple times (or hold the button) until both progress bars are full."
+		},
+		"generic_done": {
+			"title": "Adding device!\u0000"
+		},
+		"generic_test_switch": {
+			"title": "Test your device\u0000"
+		},
+		"generic_test_switch_2": {
+			"body": "Use your remote or the switch above to test your device. Press next to continue.\u0000"
+		},
+		"generic_test_remote": {
+			"title": "Test your remote\u0000",
+			"body": "Press a random button on your remote or click the button in the image above to test the signal. Press next to continue.\u0000"
+		},
+		"copy_repetitions_on": {
+			"title": "Copy 'on' signal from remote",
+			"body": "Press the <strong>on</strong> button that is paired to your device multiple times (or hold the button) until the progress bar is full."
+		},
+		"copy_repetitions_off": {
+			"title": "Copy 'off' signal from remote",
+			"body": "Press the <strong>off</strong> button that is paired to your device multiple times (or hold the button) until the progress bar is full."
+		}
+	},
+	"devices": {
+		"366363_wallswitch": {
+			"name": "36-6363 Wall switch"
+		},
+		"366364_wallswitch": {
+			"name": "36-6364 Wall switch"
+		}
+	},
+	"433_generator": {
+		"generic": {
+			"on": "On\u0000",
+			"off": "Off\u0000",
+			"left": "Left\u0000",
+			"middle": "Middle\u0000",
+			"right": "Right\u0000",
+			"up": "Up\u0000",
+			"down": "Down\u0000",
+			"button_pressed": "Button is pressed\u0000",
+			"buttons": {
+				"1": "Button 1\u0000",
+				"2": "Button 2\u0000",
+				"3": "Button 3\u0000",
+				"4": "Button 4\u0000",
+				"5": "Button 5\u0000",
+				"6": "Button 6\u0000",
+				"7": "Button 7\u0000",
+				"8": "Button 8\u0000",
+				"9": "Button 9\u0000",
+				"10": "Button 10\u0000",
+				"11": "Button 11\u0000",
+				"12": "Button 12\u0000",
+				"13": "Button 13\u0000",
+				"14": "Button 14\u0000",
+				"15": "Button 15\u0000",
+				"16": "Button 16\u0000",
+				"A": "Button A\u0000",
+				"B": "Button B\u0000",
+				"C": "Button C\u0000",
+				"D": "Button D\u0000",
+				"E": "Button E\u0000",
+				"F": "Button F\u0000",
+				"G": "Group Button\u0000",
+				"all": "All Button\u0000",
+				"bright": "Bright Button\u0000",
+				"dim": "Dim Button\u0000",
+				"left": "Left Button\u0000",
+				"middle": "Middle Button\u0000",
+				"right": "Right Button\u0000"
+			},
+			"channels": {
+				"1": "Channel 1\u0000",
+				"2": "Channel 2\u0000",
+				"3": "Channel 3\u0000",
+				"4": "Channel 4\u0000",
+				"5": "Channel 5\u0000",
+				"I": "Channel I\u0000",
+				"II": "Channel II\u0000",
+				"III": "Channel III\u0000",
+				"IV": "Channel IV\u0000",
+				"V": "Channel V\u0000",
+				"A": "Channel A\u0000",
+				"B": "Channel B\u0000",
+				"C": "Channel C\u0000",
+				"D": "Channel D\u0000",
+				"E": "Channel E\u0000",
+				"F": "Channel F\u0000"
+			},
+			"units": {
+				"1": "Unit 1\u0000",
+				"2": "Unit 2\u0000",
+				"3": "Unit 3\u0000",
+				"4": "Unit 4\u0000",
+				"5": "Unit 5\u0000",
+				"6": "Unit 6\u0000",
+				"7": "Unit 7\u0000",
+				"8": "Unit 8\u0000",
+				"9": "Unit 9\u0000",
+				"10": "Unit 10\u0000",
+				"11": "Unit 11\u0000",
+				"12": "Unit 12\u0000",
+				"13": "Unit 13\u0000",
+				"14": "Unit 14\u0000",
+				"15": "Unit 15\u0000",
+				"16": "Unit 16\u0000"
+			}
+		},
+		"error": {
+			"device_exists": "This device is already paired with Homey.\u0000",
+			"no_device": "No device set to pair. Please close the pairing wizard and try again.\u0000",
+			"no_settings": "No settings object. Please try again.\u0000",
+			"invalid_device": "The device that was created is invalid. Please remove it and try pairing it again.\u0000"
+		}
+	},
+	"undefined_generator": {
+		"generic": {
+			"on": "undefined_generator.generic.on",
+			"off": "undefined_generator.generic.off",
+			"left": "undefined_generator.generic.left",
+			"middle": "undefined_generator.generic.middle",
+			"right": "undefined_generator.generic.right",
+			"up": "undefined_generator.generic.up",
+			"down": "undefined_generator.generic.down",
+			"button_pressed": "undefined_generator.generic.button_pressed",
+			"buttons": {
+				"1": "undefined_generator.generic.buttons.1",
+				"2": "undefined_generator.generic.buttons.2",
+				"3": "undefined_generator.generic.buttons.3",
+				"4": "undefined_generator.generic.buttons.4",
+				"5": "undefined_generator.generic.buttons.5",
+				"6": "undefined_generator.generic.buttons.6",
+				"7": "undefined_generator.generic.buttons.7",
+				"8": "undefined_generator.generic.buttons.8",
+				"9": "undefined_generator.generic.buttons.9",
+				"10": "undefined_generator.generic.buttons.10",
+				"11": "undefined_generator.generic.buttons.11",
+				"12": "undefined_generator.generic.buttons.12",
+				"13": "undefined_generator.generic.buttons.13",
+				"14": "undefined_generator.generic.buttons.14",
+				"15": "undefined_generator.generic.buttons.15",
+				"16": "undefined_generator.generic.buttons.16",
+				"A": "undefined_generator.generic.buttons.A",
+				"B": "undefined_generator.generic.buttons.B",
+				"C": "undefined_generator.generic.buttons.C",
+				"D": "undefined_generator.generic.buttons.D",
+				"E": "undefined_generator.generic.buttons.E",
+				"F": "undefined_generator.generic.buttons.F",
+				"G": "undefined_generator.generic.buttons.G",
+				"all": "undefined_generator.generic.buttons.all",
+				"bright": "undefined_generator.generic.buttons.bright",
+				"dim": "undefined_generator.generic.buttons.dim",
+				"left": "undefined_generator.generic.buttons.left",
+				"middle": "undefined_generator.generic.buttons.middle",
+				"right": "undefined_generator.generic.buttons.right"
+			},
+			"channels": {
+				"1": "undefined_generator.generic.channels.1",
+				"2": "undefined_generator.generic.channels.2",
+				"3": "undefined_generator.generic.channels.3",
+				"4": "undefined_generator.generic.channels.4",
+				"5": "undefined_generator.generic.channels.5",
+				"I": "undefined_generator.generic.channels.I",
+				"II": "undefined_generator.generic.channels.II",
+				"III": "undefined_generator.generic.channels.III",
+				"IV": "undefined_generator.generic.channels.IV",
+				"V": "undefined_generator.generic.channels.V",
+				"A": "undefined_generator.generic.channels.A",
+				"B": "undefined_generator.generic.channels.B",
+				"C": "undefined_generator.generic.channels.C",
+				"D": "undefined_generator.generic.channels.D",
+				"E": "undefined_generator.generic.channels.E",
+				"F": "undefined_generator.generic.channels.F"
+			},
+			"units": {
+				"1": "undefined_generator.generic.units.1",
+				"2": "undefined_generator.generic.units.2",
+				"3": "undefined_generator.generic.units.3",
+				"4": "undefined_generator.generic.units.4",
+				"5": "undefined_generator.generic.units.5",
+				"6": "undefined_generator.generic.units.6",
+				"7": "undefined_generator.generic.units.7",
+				"8": "undefined_generator.generic.units.8",
+				"9": "undefined_generator.generic.units.9",
+				"10": "undefined_generator.generic.units.10",
+				"11": "undefined_generator.generic.units.11",
+				"12": "undefined_generator.generic.units.12",
+				"13": "undefined_generator.generic.units.13",
+				"14": "undefined_generator.generic.units.14",
+				"15": "undefined_generator.generic.units.15",
+				"16": "undefined_generator.generic.units.16"
+			}
+		},
+		"error": {
+			"device_exists": "undefined_generator.error.device_exists",
+			"no_device": "undefined_generator.error.no_device",
+			"no_settings": "undefined_generator.error.no_settings",
+			"invalid_device": "undefined_generator.error.invalid_device"
+		}
+	}
+}
