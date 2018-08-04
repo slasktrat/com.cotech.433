@@ -1,0 +1,14 @@
+{
+    "id": "36-6364",
+    "name": {
+        "en": "36-6364"
+    },
+    "$extends": [
+        "defaults",
+        "images.png",
+        "settings.rotated.wall_switch",
+        "pair.wall_switch.double",
+        "flow.switch.double",
+        "rf.wall_switch.double"
+    ]
+}

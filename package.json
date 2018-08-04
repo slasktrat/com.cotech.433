@@ -1,0 +1,28 @@
+{
+  "name": "com.cotech.433",
+  "version": "1.0.0",
+  "description": "This app adds support for your Co/Tech 433 wall switches",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "homey-log": "^1.0.5",
+    "homey-rfdriver": "^2.0.15",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slasktrat/com.cotech.433.git"
+  },
+  "author": "Athom B.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slasktrat/com.cotech.433/issues"
+  },
+  "homepage": "https://github.com/slasktrat/com.cotech.433#readme"
+}

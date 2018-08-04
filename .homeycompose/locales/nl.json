@@ -1,0 +1,20 @@
+{
+  "rf": {
+    "commands": null,
+    "pair": {
+      "copy_repetitions": {
+        "body": {
+          "wall_switch": "Druk twee keer op elke knop om het apparaat te koppelen."
+        },
+        "title": {
+          "wall_switch": "Kopieer alle signalen van je wandschakelaar."
+        }
+      },
+      "test": {
+        "body": {
+          "wall_switch": "Druk op een willekeurige knop op de wandschakelaar om het signaal te testen. Klik op volgende om verder te gaan."
+        }
+      }
+    }
+  }
+}

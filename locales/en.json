@@ -1,231 +1,229 @@
 {
-	"deviceClasses": {
-		"generic_socket": {
-			"views": {
-				"generic_imitate": {
-					"title": "Copy your remote signal\u0000",
-					"body": "Press the button that is paired to your socket.\u0000"
-				},
-				"generic_test_switch": {
-					"title": "Test your socket\u0000"
-				},
-				"generic_test_switch_2": {
-					"body": "Use your remote or the switch above to test your socket. Press next to continue.\u0000"
-				}
-			}
-		},
-		"generic_remote": {
-			"views": {
-				"generic_imitate": {
-					"title": "Identify your remote\u0000",
-					"body": "Click a button on your remote to pair it.\u0000"
-				}
-			}
-		}
-	},
-	"views": {
-		"copy_repetitions": {
-			"title": "Copy signal from remote",
-			"body": "Press the on and off button that is paired to your device multiple times (or hold the button) until both progress bars are full."
-		},
-		"generic_done": {
-			"title": "Adding device!\u0000"
-		},
-		"generic_test_switch": {
-			"title": "Test your device\u0000"
-		},
-		"generic_test_switch_2": {
-			"body": "Use your remote or the switch above to test your device. Press next to continue.\u0000"
-		},
-		"generic_test_remote": {
-			"title": "Test your remote\u0000",
-			"body": "Press a random button on your remote or click the button in the image above to test the signal. Press next to continue.\u0000"
-		},
-		"copy_repetitions_on": {
-			"title": "Copy 'on' signal from remote",
-			"body": "Press the <strong>on</strong> button that is paired to your device multiple times (or hold the button) until the progress bar is full."
-		},
-		"copy_repetitions_off": {
-			"title": "Copy 'off' signal from remote",
-			"body": "Press the <strong>off</strong> button that is paired to your device multiple times (or hold the button) until the progress bar is full."
-		}
-	},
-	"devices": {
-		"366363_wallswitch": {
-			"name": "36-6363 Wall switch"
-		},
-		"366364_wallswitch": {
-			"name": "36-6364 Wall switch"
-		}
-	},
-	"433_generator": {
-		"generic": {
-			"on": "On\u0000",
-			"off": "Off\u0000",
-			"left": "Left\u0000",
-			"middle": "Middle\u0000",
-			"right": "Right\u0000",
-			"up": "Up\u0000",
-			"down": "Down\u0000",
-			"button_pressed": "Button is pressed\u0000",
-			"buttons": {
-				"1": "Button 1\u0000",
-				"2": "Button 2\u0000",
-				"3": "Button 3\u0000",
-				"4": "Button 4\u0000",
-				"5": "Button 5\u0000",
-				"6": "Button 6\u0000",
-				"7": "Button 7\u0000",
-				"8": "Button 8\u0000",
-				"9": "Button 9\u0000",
-				"10": "Button 10\u0000",
-				"11": "Button 11\u0000",
-				"12": "Button 12\u0000",
-				"13": "Button 13\u0000",
-				"14": "Button 14\u0000",
-				"15": "Button 15\u0000",
-				"16": "Button 16\u0000",
-				"A": "Button A\u0000",
-				"B": "Button B\u0000",
-				"C": "Button C\u0000",
-				"D": "Button D\u0000",
-				"E": "Button E\u0000",
-				"F": "Button F\u0000",
-				"G": "Group Button\u0000",
-				"all": "All Button\u0000",
-				"bright": "Bright Button\u0000",
-				"dim": "Dim Button\u0000",
-				"left": "Left Button\u0000",
-				"middle": "Middle Button\u0000",
-				"right": "Right Button\u0000"
-			},
-			"channels": {
-				"1": "Channel 1\u0000",
-				"2": "Channel 2\u0000",
-				"3": "Channel 3\u0000",
-				"4": "Channel 4\u0000",
-				"5": "Channel 5\u0000",
-				"I": "Channel I\u0000",
-				"II": "Channel II\u0000",
-				"III": "Channel III\u0000",
-				"IV": "Channel IV\u0000",
-				"V": "Channel V\u0000",
-				"A": "Channel A\u0000",
-				"B": "Channel B\u0000",
-				"C": "Channel C\u0000",
-				"D": "Channel D\u0000",
-				"E": "Channel E\u0000",
-				"F": "Channel F\u0000"
-			},
-			"units": {
-				"1": "Unit 1\u0000",
-				"2": "Unit 2\u0000",
-				"3": "Unit 3\u0000",
-				"4": "Unit 4\u0000",
-				"5": "Unit 5\u0000",
-				"6": "Unit 6\u0000",
-				"7": "Unit 7\u0000",
-				"8": "Unit 8\u0000",
-				"9": "Unit 9\u0000",
-				"10": "Unit 10\u0000",
-				"11": "Unit 11\u0000",
-				"12": "Unit 12\u0000",
-				"13": "Unit 13\u0000",
-				"14": "Unit 14\u0000",
-				"15": "Unit 15\u0000",
-				"16": "Unit 16\u0000"
-			}
-		},
-		"error": {
-			"device_exists": "This device is already paired with Homey.\u0000",
-			"no_device": "No device set to pair. Please close the pairing wizard and try again.\u0000",
-			"no_settings": "No settings object. Please try again.\u0000",
-			"invalid_device": "The device that was created is invalid. Please remove it and try pairing it again.\u0000"
-		}
-	},
-	"undefined_generator": {
-		"generic": {
-			"on": "undefined_generator.generic.on",
-			"off": "undefined_generator.generic.off",
-			"left": "undefined_generator.generic.left",
-			"middle": "undefined_generator.generic.middle",
-			"right": "undefined_generator.generic.right",
-			"up": "undefined_generator.generic.up",
-			"down": "undefined_generator.generic.down",
-			"button_pressed": "undefined_generator.generic.button_pressed",
-			"buttons": {
-				"1": "undefined_generator.generic.buttons.1",
-				"2": "undefined_generator.generic.buttons.2",
-				"3": "undefined_generator.generic.buttons.3",
-				"4": "undefined_generator.generic.buttons.4",
-				"5": "undefined_generator.generic.buttons.5",
-				"6": "undefined_generator.generic.buttons.6",
-				"7": "undefined_generator.generic.buttons.7",
-				"8": "undefined_generator.generic.buttons.8",
-				"9": "undefined_generator.generic.buttons.9",
-				"10": "undefined_generator.generic.buttons.10",
-				"11": "undefined_generator.generic.buttons.11",
-				"12": "undefined_generator.generic.buttons.12",
-				"13": "undefined_generator.generic.buttons.13",
-				"14": "undefined_generator.generic.buttons.14",
-				"15": "undefined_generator.generic.buttons.15",
-				"16": "undefined_generator.generic.buttons.16",
-				"A": "undefined_generator.generic.buttons.A",
-				"B": "undefined_generator.generic.buttons.B",
-				"C": "undefined_generator.generic.buttons.C",
-				"D": "undefined_generator.generic.buttons.D",
-				"E": "undefined_generator.generic.buttons.E",
-				"F": "undefined_generator.generic.buttons.F",
-				"G": "undefined_generator.generic.buttons.G",
-				"all": "undefined_generator.generic.buttons.all",
-				"bright": "undefined_generator.generic.buttons.bright",
-				"dim": "undefined_generator.generic.buttons.dim",
-				"left": "undefined_generator.generic.buttons.left",
-				"middle": "undefined_generator.generic.buttons.middle",
-				"right": "undefined_generator.generic.buttons.right"
-			},
-			"channels": {
-				"1": "undefined_generator.generic.channels.1",
-				"2": "undefined_generator.generic.channels.2",
-				"3": "undefined_generator.generic.channels.3",
-				"4": "undefined_generator.generic.channels.4",
-				"5": "undefined_generator.generic.channels.5",
-				"I": "undefined_generator.generic.channels.I",
-				"II": "undefined_generator.generic.channels.II",
-				"III": "undefined_generator.generic.channels.III",
-				"IV": "undefined_generator.generic.channels.IV",
-				"V": "undefined_generator.generic.channels.V",
-				"A": "undefined_generator.generic.channels.A",
-				"B": "undefined_generator.generic.channels.B",
-				"C": "undefined_generator.generic.channels.C",
-				"D": "undefined_generator.generic.channels.D",
-				"E": "undefined_generator.generic.channels.E",
-				"F": "undefined_generator.generic.channels.F"
-			},
-			"units": {
-				"1": "undefined_generator.generic.units.1",
-				"2": "undefined_generator.generic.units.2",
-				"3": "undefined_generator.generic.units.3",
-				"4": "undefined_generator.generic.units.4",
-				"5": "undefined_generator.generic.units.5",
-				"6": "undefined_generator.generic.units.6",
-				"7": "undefined_generator.generic.units.7",
-				"8": "undefined_generator.generic.units.8",
-				"9": "undefined_generator.generic.units.9",
-				"10": "undefined_generator.generic.units.10",
-				"11": "undefined_generator.generic.units.11",
-				"12": "undefined_generator.generic.units.12",
-				"13": "undefined_generator.generic.units.13",
-				"14": "undefined_generator.generic.units.14",
-				"15": "undefined_generator.generic.units.15",
-				"16": "undefined_generator.generic.units.16"
-			}
-		},
-		"error": {
-			"device_exists": "undefined_generator.error.device_exists",
-			"no_device": "undefined_generator.error.no_device",
-			"no_settings": "undefined_generator.error.no_settings",
-			"invalid_device": "undefined_generator.error.invalid_device"
-		}
-	}
+  "rf": {
+    "commands": null,
+    "pair": {
+      "imitate": {
+        "title": {
+          "default": "Copy your remote signal",
+          "remote": "Identify your remote",
+          "wall_switch": "Identify your wall switch",
+          "doorbell": "Identify your doorbell"
+        },
+        "body": {
+          "default": "Click the button on your remote that is paired to your device.",
+          "blinds": "Press the up/down button on the remote that is paired to your blinds.",
+          "remote": "Click a button on your remote to pair it.",
+          "wall_switch": "Press a random button on your wall switch to pair it.",
+          "socket": "Press the button that is paired to your socket.",
+          "doorbell": "Press your doorbell button to pair it."
+        }
+      },
+      "choice": {
+        "title": {
+          "default": "Choose one of the following options",
+          "switch": "Copy signal from remote or pair device with Homey",
+          "codewheel": "Copy signal from remote or set the codewheels manually",
+          "dipswitch": "Copy signal from remote or set the dipswitches manually"
+        },
+        "body": {
+          "default": "Click one of the buttons above to proceed.",
+          "switch": "Choose if you want to copy an existing signal from a paired remote or if you want to generate a new signal to pair this device.",
+          "codewheel": "Choose if you want to copy an existing signal from a paired remote or if you want to set the codewheels manually to pair this device.",
+          "dipswitch": "Choose if you want to copy an existing signal from a paired remote or if you want to set the dipswitches manually to pair this device."
+        },
+        "buttons": {
+          "copy": {
+            "default": "Copy a paired remote"
+          },
+          "generate": {
+            "default": "Generate a new signal",
+            "codewheel": "Manually set codewheels",
+            "dipswitch": "Set the dipswitches"
+          }
+        }
+      },
+      "info": {
+        "title": {
+          "default": "info",
+          "dipswitch": "Locate the dipswitches on your device",
+          "codewheel": "Locate the codewheels on your device"
+        },
+        "body": {
+          "default": "info message",
+          "dipswitch": "Locate the dipswitches on your device like displayed above, then click next.",
+          "codewheel": "Locate the codewheels on your device like displayed above, then click next."
+        }
+      },
+      "program": {
+        "programbutton": {
+          "default": "Program"
+        },
+        "title": {
+          "default": "Pair your device with Homey",
+          "socket": "Put the socket in pairing mode"
+        },
+        "body": {
+          "default": "Put your device in pairing mode, then click the 'Program' button to pair your device with Homey.",
+          "socket": "Press the program button on your socket to put it in pairing mode, then click the 'Program' button."
+        }
+      },
+      "test": {
+        "title": {
+          "default": "Test your device",
+          "remote": "Test your remote",
+          "wall_switch": "Test your wall switch",
+          "socket": "Test your socket",
+          "doorbell": "Test your doorbell",
+          "blinds": "Test your blinds"
+        },
+        "body": {
+          "default": "Press a random button on your device or click the button in the image above to test the signal. Press next to continue.",
+          "remote": "Press a random button on your remote or click the button in the image above to test the signal. Press next to continue.",
+          "wall_switch": "Press a random button on your wall switch test the signal. Press next to continue.",
+          "socket_generated": "Use the switch above to test your socket. Press next to continue.",
+          "socket": "Use your remote or the switch above to test your socket. Press next to continue.",
+          "button_generated": "Use the button above to test your device. Press next to continue.",
+          "button": "Use your remote or the button above to test your device. Press next to continue.",
+          "switch_generated": "Use the switch above to test your device. Press next to continue.",
+          "switch": "Use your remote or the switch above to test your device. Press next to continue.",
+          "doorbell_generated": "Use the button above to test your doorbell. Press next to continue.",
+          "doorbell": "Use your doorbell button or the button above to test your device. Press next to continue.",
+          "svg_buttons": "Use your remote or the buttons in the image above to test your device. Press next to continue.",
+          "blinds": "Use your remote or the buttons in the image above to test your blinds. Press next to continue."
+        }
+      },
+      "codewheel": {
+        "programbutton": {
+          "default": "Program"
+        },
+        "title": {
+          "default": "Configure your device code"
+        },
+        "body": {
+          "default": "Click the characters on the code wheel above or configure the wheels on the device so they match, then click next."
+        }
+      },
+      "dipswitch": {
+        "programbutton": {
+          "default": "Program"
+        },
+        "title": {
+          "default": "Configure your device dipswitches"
+        },
+        "body": {
+          "default": "Click on the dipswitches above to put them in the same arrangement as those of your device, then click program."
+        }
+      },
+      "done": {
+        "title": {
+          "default": "Adding device!"
+        }
+      },
+      "copy_repetitions": {
+        "body": {
+          "wall_switch": "Press each button twice to pair the device.<br/>If buttons are upside down, they can be inverted in the next step."
+        },
+        "title": {
+          "wall_switch": "Copy all signals of your wall switch."
+        }
+      }
+    },
+    "settings": {
+      "groups": {
+        "general": "General Settings"
+      },
+      "rotated": {
+        "0": "No",
+        "180": "Yes",
+        "label": "Invert signal"
+      }
+    },
+    "generic": {
+      "on": "On",
+      "off": "Off",
+      "left": "Left",
+      "middle": "Middle",
+      "right": "Right",
+      "up": "Up",
+      "down": "Down",
+      "button_pressed": "Button is pressed",
+      "buttons": {
+        "1": "Button 1",
+        "2": "Button 2",
+        "3": "Button 3",
+        "4": "Button 4",
+        "5": "Button 5",
+        "6": "Button 6",
+        "7": "Button 7",
+        "8": "Button 8",
+        "9": "Button 9",
+        "10": "Button 10",
+        "11": "Button 11",
+        "12": "Button 12",
+        "13": "Button 13",
+        "14": "Button 14",
+        "15": "Button 15",
+        "16": "Button 16",
+        "A": "Button A",
+        "B": "Button B",
+        "C": "Button C",
+        "D": "Button D",
+        "E": "Button E",
+        "F": "Button F",
+        "G": "Group Button",
+        "all": "All Button",
+        "bright": "Bright Button",
+        "dim": "Dim Button",
+        "left": "Left Button",
+        "middle": "Middle Button",
+        "right": "Right Button"
+      },
+      "channels": {
+        "1": "Channel 1",
+        "2": "Channel 2",
+        "3": "Channel 3",
+        "4": "Channel 4",
+        "5": "Channel 5",
+        "I": "Channel I",
+        "II": "Channel II",
+        "III": "Channel III",
+        "IV": "Channel IV",
+        "V": "Channel V",
+        "A": "Channel A",
+        "B": "Channel B",
+        "C": "Channel C",
+        "D": "Channel D",
+        "E": "Channel E",
+        "F": "Channel F"
+      },
+      "units": {
+        "1": "Unit 1",
+        "2": "Unit 2",
+        "3": "Unit 3",
+        "4": "Unit 4",
+        "5": "Unit 5",
+        "6": "Unit 6",
+        "7": "Unit 7",
+        "8": "Unit 8",
+        "9": "Unit 9",
+        "10": "Unit 10",
+        "11": "Unit 11",
+        "12": "Unit 12",
+        "13": "Unit 13",
+        "14": "Unit 14",
+        "15": "Unit 15",
+        "16": "Unit 16"
+      }
+    },
+    "error": {
+      "device_exists": "This device is already paired with Homey.",
+      "no_device": "No device set to pair. Please close the pairing wizard and try again.",
+      "no_settings": "No settings object. Please try again.",
+      "invalid_device": "Could not connect to the microcontroller. Please try restarting Homey by pulling the plug of Homey.",
+      "invalid_device_data": "The device that was created is invalid. Please remove it and try pairing it again.",
+      "data_no_object": "Data must be an object!",
+      "pairdevice_invalid_data": "New pairing device data is invalid, changes are reverted.",
+      "invalid_send_data": "Invalid data send request. Please contact the developer."
+    }
+  }
 }

@@ -1,0 +1,35 @@
+{
+    "$flow": {
+        "triggers": [
+            {
+                "id": "{{driverId}}:received",
+                "title": {
+                    "en": "Button is pressed",
+                    "nl": "Knop is ingedrukt"
+                },
+                "args": [
+                    {
+                        "name": "state",
+                        "type": "dropdown",
+                        "values": [
+                            {
+                                "id": "1",
+                                "label": {
+                                    "en": "On",
+                                    "nl": "Aan"
+                                }
+                            },
+                            {
+                                "id": "0",
+                                "label": {
+                                    "en": "Off",
+                                    "nl": "Uit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

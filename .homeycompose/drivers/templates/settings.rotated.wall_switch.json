@@ -1,0 +1,38 @@
+{
+    "settings": [
+        {
+            "type": "group",
+            "label": {
+                "en": "General settings",
+                "nl": "Algemene instellingen"
+            },
+            "children": [
+                {
+                    "id": "rotated",
+                    "type": "radio",
+                    "value": "0",
+                    "label": {
+                        "en": "Rotate wall switch",
+                        "nl": "Roteer wandschakelaar"
+                    },
+                    "values": [
+                        {
+                            "id": "0",
+                            "label": {
+                                "en": "Right Side Up",
+                                "nl": "Rechtop"
+                            }
+                        },
+                        {
+                            "id": "180",
+                            "label": {
+                                "en": "Upside Down",
+                                "nl": "Ondersteboven"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

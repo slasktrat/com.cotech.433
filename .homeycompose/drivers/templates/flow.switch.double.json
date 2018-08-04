@@ -1,0 +1,55 @@
+{
+    "$flow": {
+        "triggers": [
+            {
+                "id": "{{driverId}}:received",
+                "title": {
+                    "en": "Button is pressed",
+                    "nl": "Knop is ingedrukt"
+                },
+                "args": [
+                    {
+                        "name": "buttonIndex",
+                        "type": "dropdown",
+                        "values": [
+                            {
+                                "id": "0",
+                                "label": {
+                                    "en": "Left Button",
+                                    "nl": "Linker Knop"
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "label": {
+                                    "en": "Right Button",
+                                    "nl": "Rechter Knop"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "state",
+                        "type": "dropdown",
+                        "values": [
+                            {
+                                "id": "1",
+                                "label": {
+                                    "en": "On",
+                                    "nl": "Aan"
+                                }
+                            },
+                            {
+                                "id": "0",
+                                "label": {
+                                    "en": "Off",
+                                    "nl": "Uit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

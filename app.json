@@ -10,8 +10,9 @@
     "appliances",
     "lights"
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": ">=1.5.3",
+  "sdk": 2,
   "author": {
     "name": "Espen Ljosland",
     "email": "espen@ljosland.com"
@@ -22,6 +23,280 @@
   },
   "permissions": [
     "homey:wireless:433"
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "36-6363:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=36-6363"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "36-6364:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=36-6364"
+          },
+          {
+            "name": "buttonIndex",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Left Button",
+                  "nl": "Linker Knop"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "Right Button",
+                  "nl": "Rechter Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "images": {
+        "large": "/drivers/36-6363/assets/images/large.jpg",
+        "small": "/drivers/36-6363/assets/images/small.jpg"
+      },
+      "icon": "/drivers/36-6363/assets/icon.svg",
+      "capabilities": [],
+      "class": "other",
+      "rf": {
+        "debounceTimeout": 500,
+        "signal": "cotech"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "General settings",
+            "nl": "Algemene instellingen"
+          },
+          "children": [
+            {
+              "id": "rotated",
+              "type": "radio",
+              "value": "0",
+              "label": {
+                "en": "Rotate wall switch",
+                "nl": "Roteer wandschakelaar"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Right Side Up",
+                    "nl": "Rechtop"
+                  }
+                },
+                {
+                  "id": "180",
+                  "label": {
+                    "en": "Upside Down",
+                    "nl": "Ondersteboven"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "rf.imitate",
+          "options": {
+            "title": "rf.pair.imitate.title.wall_switch",
+            "body": "rf.pair.imitate.body.wall_switch",
+            "svg": "assets/svg/pair.svg"
+          }
+        },
+        {
+          "id": "rf.copy_repetitions",
+          "options": {
+            "title": "rf.pair.copy_repetitions.title.wall_switch",
+            "body": "rf.pair.copy_repetitions.body.wall_switch",
+            "svg": "assets/svg/pair.svg"
+          },
+          "navigation": {
+            "prev": "rf.imitate"
+          }
+        },
+        {
+          "id": "rf.test",
+          "options": {
+            "title": "rf.pair.test.title.wall_switch",
+            "body": "rf.pair.test.body.wall_switch",
+            "svg": "assets/svg/test.svg"
+          },
+          "navigation": {
+            "prev": "rf.copy_repetitions",
+            "next": "rf.done"
+          }
+        },
+        {
+          "id": "rf.done"
+        }
+      ],
+      "id": "36-6363",
+      "name": {
+        "en": "36-6363"
+      }
+    },
+    {
+      "images": {
+        "large": "/drivers/36-6364/assets/images/large.jpg",
+        "small": "/drivers/36-6364/assets/images/small.jpg"
+      },
+      "icon": "/drivers/36-6364/assets/icon.svg",
+      "capabilities": [],
+      "class": "other",
+      "rf": {
+        "debounceTimeout": 500,
+        "signal": "cotech",
+        "buttonCount": 2
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "General settings",
+            "nl": "Algemene instellingen"
+          },
+          "children": [
+            {
+              "id": "rotated",
+              "type": "radio",
+              "value": "0",
+              "label": {
+                "en": "Rotate wall switch",
+                "nl": "Roteer wandschakelaar"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Right Side Up",
+                    "nl": "Rechtop"
+                  }
+                },
+                {
+                  "id": "180",
+                  "label": {
+                    "en": "Upside Down",
+                    "nl": "Ondersteboven"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "rf.imitate",
+          "options": {
+            "title": "rf.pair.imitate.title.wall_switch",
+            "body": "rf.pair.imitate.body.wall_switch",
+            "svg": "assets/svg/pair.svg"
+          }
+        },
+        {
+          "id": "rf.copy_repetitions",
+          "options": {
+            "title": "rf.pair.copy_repetitions.title.wall_switch",
+            "body": "rf.pair.copy_repetitions.body.wall_switch",
+            "svg": "assets/svg/pair.svg",
+            "buttonCount": 2
+          },
+          "navigation": {
+            "prev": "rf.imitate"
+          }
+        },
+        {
+          "id": "rf.test",
+          "options": {
+            "title": "rf.pair.test.title.wall_switch",
+            "body": "rf.pair.test.body.wall_switch",
+            "svg": "assets/svg/test.svg"
+          },
+          "navigation": {
+            "prev": "rf.copy_repetitions",
+            "next": "rf.done"
+          }
+        },
+        {
+          "id": "rf.done"
+        }
+      ],
+      "id": "36-6364",
+      "name": {
+        "en": "36-6364"
+      }
+    }
   ],
   "signals": {
     "433": {
@@ -48,182 +323,5 @@
         "maximalLength": 32
       }
     }
-  },
-  "drivers": [
-    {
-      "id": "366363_wallswitch",
-      "name": {
-        "en": "36-6363 Wall Switch"
-      },
-      "class": "other",
-      "capabilities": [],
-      "images": {
-        "small": "./drivers/366363_wallswitch/images/small.jpg",
-        "large": "./drivers/366363_wallswitch/images/large.jpg"
-      },
-      "pair": [
-        {
-          "id": "generic_imitate",
-          "navigation": {}
-        },
-        {
-          "id": "copy_repetitions_on",
-          "navigation": {
-            "prev": "generic_imitate"
-          }
-        },
-        {
-          "id": "copy_repetitions_off",
-          "navigation": {
-            "prev": "copy_repetitions_on"
-          }
-        },
-        {
-          "id": "generic_test_remote",
-          "navigation": {
-            "prev": "copy_repetitions_off",
-            "next": "generic_done"
-          }
-        },
-        {
-          "id": "generic_done",
-          "navigation": {}
-        }
-      ]
-    },
-    {
-      "id": "366364_wallswitch",
-      "name": {
-        "en": "36-6364 Wall Switch"
-      },
-      "class": "other",
-      "capabilities": [],
-      "images": {
-        "small": "./433_generator/assets/366364_wallswitch/images/small.jpg",
-        "large": "./433_generator/assets/366364_wallswitch/images/large.jpg"
-      },
-      "pair": [
-        {
-          "id": "generic_imitate",
-          "navigation": {}
-        },
-        {
-          "id": "copy_repetitions_on",
-          "navigation": {
-            "prev": "generic_imitate"
-          }
-        },
-        {
-          "id": "copy_repetitions_off",
-          "navigation": {
-            "prev": "copy_repetitions_on"
-          }
-        },
-        {
-          "id": "generic_test_remote",
-          "navigation": {
-            "prev": "copy_repetitions_off",
-            "next": "generic_done"
-          }
-        },
-        {
-          "id": "generic_done",
-          "navigation": {}
-        }
-      ]
-    }
-  ],
-  "flow": {
-    "triggers": [
-      {
-        "id": "366363_wallswitch:received",
-        "title": {
-          "en": "Button is pressed\u0000",
-          "nl": "Knop is ingedrukt\u0000"
-        },
-        "args": [
-          {
-            "name": "state",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "On\u0000",
-                  "nl": "Aan\u0000"
-                }
-              },
-              {
-                "id": "0",
-                "label": {
-                  "en": "Off\u0000",
-                  "nl": "Uit\u0000"
-                }
-              }
-            ]
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=366363_wallswitch"
-          }
-        ]
-      },
-      {
-        "id": "366364_wallswitch:received",
-        "title": {
-          "en": "Button is pressed\u0000",
-          "nl": "Knop is ingedrukt\u0000"
-        },
-        "args": [
-          {
-            "name": "unit",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "0101",
-                "label": {
-                  "en": "Button A\u0000",
-                  "nl": "Knop A\u0000"
-                }
-              },{
-                "id": "0011",
-                "label": {
-                  "en": "Button B\u0000",
-                  "nl": "Knop B\u0000"
-                }
-              }
-            ]
-          },
-          {
-            "name": "state",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "On\u0000",
-                  "nl": "Aan\u0000"
-                }
-              },
-              {
-                "id": "0",
-                "label": {
-                  "en": "Off\u0000",
-                  "nl": "Uit\u0000"
-                }
-              }
-            ]
-          },
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=366364_wallswitch"
-          }
-        ]
-      }
-    ],
-    "conditions": [],
-    "actions": []
   }
 }

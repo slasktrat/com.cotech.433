@@ -1,0 +1,20 @@
+{
+    "rf": {
+        "commands": null,
+        "pair": {
+            "copy_repetitions": {
+                "body": {
+                    "wall_switch": "Press each button twice to pair the device.<br/>If buttons are upside down, they can be inverted in the next step."
+                },
+                "title": {
+                    "wall_switch": "Copy all signals of your wall switch."
+                }
+            },
+            "test": {
+                "body": {
+                    "wall_switch": "Press a random button on your wall switch test the signal. Press next to continue."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+{
+  "rf": {
+    "commands": null,
+    "pair": {
+      "imitate": {
+        "title": {
+          "default": "Kopieer het signaal van de afstandsbediening",
+          "remote": "Identificeer de afstandsbediening",
+          "wall_switch": "Identificeer de wandschakelaar",
+          "doorbell": "Identificeer de deurbel"
+        },
+        "body": {
+          "default": "Druk op de knop op de afstandsbediening waarop het apparaat geprogrammeerd is.",
+          "blinds": "Druk op de omhoog/omlaag knop van de afstandsbediening waarmee de zonnewering gekoppeld is.",
+          "remote": "Klik op een willekeurige knop op de afstandsbediening om hem te koppelen.",
+          "wall_switch": "Klik op een willekeurige knop op de wandschakelaar om hem te koppelen.",
+          "socket": "Druk op de knop van de afstandsbediening waarmee het apparaat gekoppeld is.",
+          "doorbell": "Druk op de knop van de deurbel om deze te koppelen."
+        }
+      },
+      "choice": {
+        "title": {
+          "default": "Kies een van de volgende opties",
+          "switch": "Kopieer de afstandsbediening of programmeer met Homey",
+          "codewheel": "Kopieer de afstandsbediening of stel de lettercodeshijfen handmatig in",
+          "dipswitch": "Kopieer de afstandsbediening of stel de dipswitches handmatig in"
+        },
+        "body": {
+          "default": "Klik op een van de opties om verder te gaan.",
+          "switch": "Kies of je het signaal van een gekoppelde afstandsbediening wil kopiëren of dat je het apparaat wil programmeren met een nieuw signaal van Homey.",
+          "codewheel": "Kies of je het signaal van een gekoppelde afstandsbediening wil kopiëren of dat je de lettercodeshijf handmatig wil instellen.",
+          "dipswitch": "Kies of je het signaal van een gekoppelde afstandsbediening wil kopiëren of dat je de dipswitches handmatig wil instellen."
+        },
+        "buttons": {
+          "copy": {
+            "default": "Kopieer afstandsbediening"
+          },
+          "generate": {
+            "default": "Genereer nieuw signaal",
+            "codewheel": "lettercodeshijf instellen",
+            "dipswitch": "dipswitches instellen"
+          }
+        }
+      },
+      "info": {
+        "title": {
+          "dipswitch": "Vind de dipswitches op het apparaat",
+          "codewheel": "Vind de lettercodeshijfen op het apparaat"
+        },
+        "body": {
+          "dipswitch": "Vind de dipswitches op het apparaat zoals hierboven aangegeven, klik daarna op volgende.",
+          "codewheel": "Vind de lettercodeshijfen op het apparaat zoals hierboven aangegeven, klik daarna op volgende."
+        }
+      },
+      "program": {
+        "programbutton": {
+          "default": "Programmeer"
+        },
+        "title": {
+          "default": "Programmeer het apparaat met Homey",
+          "socket": "Zet de contactdoos in programmeer modus"
+        },
+        "body": {
+          "default": "Zet het apparaat in programmeer modus en klik op 'Programmeer' om het apparaat met Homey te verbinden.",
+          "socket": "Houd de programmeer knop van de contactdoos een paar seconden ingehouden om deze in programeer modus te zetten. Klik daarna op de 'Programmeer' knop."
+        }
+      },
+      "test": {
+        "title": {
+          "default": "Test het apparaat",
+          "remote": "Test your remote",
+          "wall_switch": "Test de wandschakelaar",
+          "socket": "Test de contactdoos"
+        },
+        "body": {
+          "default": "Druk op een willekeurige knop op het apparaat of op de knoppen in het bovenstaande plaatje om het signaal te testen. Klik op volgende om verder te gaan.",
+          "remote": "Druk op een willekeurige knop op de afstandsbediening of op de knoppen in het bovenstaande plaatje om het signaal te testen. Klik op volgende om verder te gaan.",
+          "wall_switch": "Druk op een willekeurige knop op de wandschakelaar om het signaal te testen. Klik op volgende om verder te gaan.",
+          "socket_generated": "Gebruik te bovenstaande switch om de schakeldoos te testen. Klik op volgende om verder te gaan.",
+          "socket": "Gebruik de afstandsbediening of de bovenstaande switch om de schakeldoos te testen. Klik op volgende om verder te gaan.",
+          "button_generated": "Gebruik de bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
+          "button": "Gebruik de afstandsbediening of te bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
+          "switch_generated": "Gebruik de bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
+          "switch": "Gebruik de afstandsbediening of de bovenstaande knop om het apparaat te testen. Klik op volgende om verder te gaan.",
+          "doorbell_generated": "Gebruik de bovenstaande knop om de deurbel te testen. Klik op volgende om verder te gaan.",
+          "doorbell": "Gebruik de deurbel of de bovenstaande knop om de deurbel te testen. Klik op volgende om verder te gaan.",
+          "blinds": "Gebruik de afstandsbediening of de bovenstaande knoppen om de zonnewering te testen. Klik op volgende om verder te gaan."
+        }
+      },
+      "codewheel": {
+        "programbutton": {
+          "default": "Programmeer"
+        },
+        "title": {
+          "default": "Configureer de apparaatcode"
+        },
+        "body": {
+          "default": "Klik op de karakters op de bovenstaande lettercodeshijf of pas de lettercodeshijf op het apparaat aan zodat deze gelijk aan elkaar zijn, klik daarna op volgende."
+        }
+      },
+      "dipswitch": {
+        "programbutton": {
+          "default": "Programmeer"
+        },
+        "title": {
+          "default": "Stel de dipswitches van het apparaat in"
+        },
+        "body": {
+          "default": "Klik op de bovenstaande dipswitches om ze gelijk aan de dipswitches van het apparaat in te stellen, klik daarna op programmeren."
+        }
+      },
+      "done": {
+        "title": {
+          "default": "Apparaat wordt toegevoegd!"
+        }
+      },
+      "copy_repetitions": {
+        "body": {
+          "wall_switch": "Druk twee keer op elke knop om het apparaat te koppelen."
+        },
+        "title": {
+          "wall_switch": "Kopieer alle signalen van je wandschakelaar."
+        }
+      }
+    },
+    "settings": {
+      "groups": {
+        "general": "Algemene Instellingen"
+      },
+      "rotated": {
+        "0": "Nee",
+        "180": "Ja",
+        "label": "Inverteer signaal"
+      }
+    },
+    "generic": {
+      "on": "Aan",
+      "off": "Uit",
+      "left": "Links",
+      "middle": "Midden",
+      "right": "Rechts",
+      "up": "Up",
+      "down": "Down",
+      "button_pressed": "Knop is ingedrukt",
+      "buttons": {
+        "1": "Knop 1",
+        "2": "Knop 2",
+        "3": "Knop 3",
+        "4": "Knop 4",
+        "5": "Knop 5",
+        "6": "Knop 6",
+        "7": "Knop 7",
+        "8": "Knop 8",
+        "9": "Knop 9",
+        "10": "Knop 10",
+        "11": "Knop 11",
+        "12": "Knop 12",
+        "13": "Knop 13",
+        "14": "Knop 14",
+        "15": "Knop 15",
+        "16": "Knop 16",
+        "A": "Knop A",
+        "B": "Knop B",
+        "C": "Knop C",
+        "D": "Knop D",
+        "E": "Knop E",
+        "F": "Knop F",
+        "G": "Groep Knop",
+        "all": "All Knop",
+        "bright": "Fel Knop",
+        "dim": "Gedimt Knop",
+        "left": "Linker Knop",
+        "middle": "Middelste Knop",
+        "right": "Rechter Knop"
+      },
+      "channels": {
+        "1": "Kanaal 1",
+        "2": "Kanaal 2",
+        "3": "Kanaal 3",
+        "4": "Kanaal 4",
+        "5": "Kanaal 5",
+        "I": "Kanaal I",
+        "II": "Kanaal II",
+        "III": "Kanaal III",
+        "IV": "Kanaal IV",
+        "V": "Kanaal V",
+        "A": "Kanaal A",
+        "B": "Kanaal B",
+        "C": "Kanaal C",
+        "D": "Kanaal D",
+        "E": "Kanaal E",
+        "F": "Kanaal F"
+      },
+      "units": {
+        "1": "Unit 1",
+        "2": "Unit 2",
+        "3": "Unit 3",
+        "4": "Unit 4",
+        "5": "Unit 5",
+        "6": "Unit 6",
+        "7": "Unit 7",
+        "8": "Unit 8",
+        "9": "Unit 9",
+        "10": "Unit 10",
+        "11": "Unit 11",
+        "12": "Unit 12",
+        "13": "Unit 13",
+        "14": "Unit 14",
+        "15": "Unit 15",
+        "16": "Unit 16"
+      }
+    },
+    "error": {
+      "device_exists": "Apparaat is al gekoppeld met Homey.",
+      "no_device": "Er is geen apparaat ingesteld. Sluit de pairing wizard en probeer opnieuw.",
+      "no_settings": "Geen instelling object. Probeer aub opnieuw.",
+      "invalid_device": "Het apparaat dat is aangemaakt is incorrect. Verwijder dit apparaat en probeer opnieuw."
+    }
+  }
+}

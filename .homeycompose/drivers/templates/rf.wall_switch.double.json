@@ -1,0 +1,7 @@
+{
+	"rf": {
+		"debounceTimeout": 500,
+		"signal": "cotech",
+		"buttonCount": 2
+	}
+}

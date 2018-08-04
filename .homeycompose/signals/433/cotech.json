@@ -1,0 +1,22 @@
+{
+    "sof": [],
+    "eof": [
+        473,
+        4076
+    ],
+    "words": [
+        [
+            473,
+            1554
+        ],
+        [
+            1498,
+            547
+        ]
+    ],
+    "interval": 5000,
+    "sensitivity": 0.5,
+    "repetitions": 20,
+    "minimalLength": 32,
+    "maximalLength": 32
+}

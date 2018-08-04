@@ -1,0 +1,13 @@
+{
+    "images": {
+        "large": "{{driverPath}}/assets/images/large.jpg",
+        "small": "{{driverPath}}/assets/images/small.jpg"
+    },
+    "icon": "{{driverPath}}/assets/icon.svg",
+    "capabilities": [],
+    "class": "other",
+    "rf": {
+        "debounceTimeout": 500,
+        "signal": "cotech"
+    }
+}
